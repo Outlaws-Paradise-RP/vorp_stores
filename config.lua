@@ -8,20 +8,6 @@ Config = {}
 -- "center" / "top-left" / "top-right"
 Config.Align = "top-left"
 
---Webhook Section, description is in translation
-Config.UseWebhook = false -- Use webhook
-
---Mandatory Webhook Parts
-Config.WebhookTitle = ""
-Config.Webhook = ""
-
---Optional Webhook Parts, if not filled will default vorp_core config
-Config.WebhookColor = ""
-Config.WebhookName = ""
-Config.WebhookLogo = ""
-Config.WebhookLogo2 = ""
-Config.WebhookAvatar = ""
-
 Config.defaultlang = "en_lang"
 
 -- open stores
@@ -349,53 +335,91 @@ Config.SellItems = {
 Config.BuyItems = {
     Valentine = {
         { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
-        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
+        { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
 
     Rhodes = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
         { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
 
     Strawberry = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
 
     Blackwater = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
     Armadillo = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
     Tumbleweed = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
     StDenis = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
     Vanhorn = {
+        { itemLabel = "Pick Axe", itemName = "pickaxe", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 55), desc = "buy Pick Axe", category = "tools" },
         { itemLabel = "Apple", itemName = "apple", currencyType = "cash", buyprice = 50, randomprice = math.random(30, 52), desc = "buy apple", category = "food" },
         { itemLabel = "Water", itemName = "water", currencyType = "cash", buyprice = 10, randomprice = math.random(12), desc = "buy water", category = "food" },
         { itemLabel = "bandage", itemName = "bandage", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 40), desc = "buy bandage", category = "meds" },
+        { itemLabel = "Gold nugget", itemName = "golden_nugget", currencyType = "gold", buyprice = 10, randomprice = math.random(15), desc = "buy gold nuget", category = "food" },
+        { itemLabel = "Canteen", itemName = "canteen", currencyType = "cash", buyprice = 10, randomprice = math.random(30, 52), desc = "buy a Canteen", category = "food" },
+        { itemLabel = "Campfire", itemName = "campfire", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Campfire", category = "tools" },
+        { itemLabel = "Tent", itemName = "tent", currencyType = "cash", buyprice = 40, randomprice = math.random(30, 52), desc = "buy a Tent for a Camp", category = "tools" },
     },
     BlackwaterFishing = {
         { itemLabel = "Bait", itemName = "bait", currencyType = "cash", buyprice = 50, randomprice = math.random(45, 55), desc = "buy Bait", category = "bait" },
         { itemLabel = "Fish Bait", itemName = "fishbait", currencyType = "cash", buyprice = 10, randomprice = math.random(14), desc = "buy", category = "bait" },
         { itemLabel = "Bread Bait", itemName = "p_baitBread01x", currencyType = "cash", buyprice = 40, randomprice = math.random(34, 49), desc = "buy", category = "bait" },
-
     },
     Wapiti = {
         { itemLabel = "Bait", itemName = "bait", currencyType = "cash", buyprice = 50, randomprice = math.random(45, 55), desc = "buy Bait", category = "bait" },
